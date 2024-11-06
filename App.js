@@ -42,7 +42,7 @@ const App = () => {
         { id: 'answer1', image: require('./assets/img/arizona.png') },
         { id: 'answer2', image: require('./assets/img/penn.png') },
         { id: 'answer3', image: require('./assets/img/georgia.png') },
-        { id: 'answer4', image: require('./assets/img/nevada.png') },
+        { id: 'answer4', image: require('./assets/img/nevada.png') }
     ];
 
     const options = [
