@@ -16,7 +16,7 @@ const App = () => {
         answer1: 'Arizona',
         answer2: 'Pennsylvania',
         answer3: 'Georgia',
-        answer4: 'Nevada',
+        answer4: 'Nevada'
     };
 
     const handleAnswerChange = (questionId, value) => {
