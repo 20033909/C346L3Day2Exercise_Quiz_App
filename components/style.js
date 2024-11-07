@@ -4,11 +4,11 @@ const styles = StyleSheet.create({
 
     scrollContainer: {
         flexGrow: 1,
-        paddingBottom: 20,
+        paddingBottom: 55,
         backgroundColor: '#f6b092',
+        minHeight: '100%'
     },
     container: {
-        flex: 1,
         alignItems: 'center',
         justifyContent: 'flex-start',
         paddingTop: 40,

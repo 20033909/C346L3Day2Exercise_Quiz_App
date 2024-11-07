@@ -55,7 +55,7 @@ const App = () => {
     ];
 
     return (
-        <ScrollView contentContainerStyle={style.scrollContainer}>
+        <ScrollView contentContainerStyle={style.scrollContainer} style={{ flex: 1 }}>
             <View style={style.container}>
                 <View style={style.titleContainer}>
                     <Text style={style.title}>Geography Trivia</Text>
