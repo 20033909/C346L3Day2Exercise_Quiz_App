@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Alert, Text, View, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import QuestionItem from './components/QuestionItem';
 import style from './components/style';
-import Icon from "react-native-vector-icons/Feather";
+import Icon from "react-native-vector-icons/FontAwesome6";
 
 const App = () => {
     const [answers, setAnswers] = useState({
@@ -39,10 +39,10 @@ const App = () => {
     };
 
     const questions = [
-        { id: 'answer1', image: require('./assets/img/arizona.png') },
-        { id: 'answer2', image: require('./assets/img/penn.png') },
-        { id: 'answer3', image: require('./assets/img/georgia.png') },
-        { id: 'answer4', image: require('./assets/img/nevada.png') }
+        { id: 'answer1', image: require('./assets/img/arizona.png'), questionText: 'Has the Grand Canyon'},
+        { id: 'answer2', image: require('./assets/img/penn.png'), questionText: 'Has the largest Amish population'},
+        { id: 'answer3', image: require('./assets/img/georgia.png'), questionText: 'Name in a song title'},
+        { id: 'answer4', image: require('./assets/img/nevada.png'), questionText: 'Home of Las Vegas'}
     ];
 
     const options = [
@@ -58,16 +58,18 @@ const App = () => {
         <ScrollView contentContainerStyle={style.scrollContainer} style={{ flex: 1 }}>
             <View style={style.container}>
                 <View style={style.titleContainer}>
-                    <Text style={style.title}>Geography Trivia</Text>
-                    <Icon name="map-pin" size={20} color="#B23B23" />
+                    <Icon name="flag-usa" size={20} color="#B23B23" />
+                    <Text style={style.title}>Election Quiz</Text>
+                    <Icon name="flag-usa" size={20} color="#B23B23" />
                 </View>
-                <Text style={style.subtitle}>US Swing States Edition (2024)</Text>
+                <Text style={style.subtitle}>Swing States Edition (2024)</Text>
 
                 {questions.map((question) => (
                     <QuestionItem
                         key={question.id}
                         id={question.id}
                         imageSource={question.image}
+                        questionText={question.questionText}
                         options={options}
                         onValueChange={handleAnswerChange}
                     />

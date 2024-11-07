@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
         color: '#333',
         marginBottom: 2,
         textAlign: 'center',
-        marginRight: 10
+        marginRight: 10,
+        marginLeft: 10
     },
     questionContainer: {
         marginBottom: 20,
