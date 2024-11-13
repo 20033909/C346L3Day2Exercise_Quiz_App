@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'flex-start',
-        paddingTop: 40,
+        paddingTop: 40
     },
     title: {
         fontSize: 28,
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         color: '#333',
         marginBottom: 2,
         textAlign: 'center',
-        marginRight: 10,
+        marginRight: 10
         marginLeft: 10
     },
     questionContainer: {
