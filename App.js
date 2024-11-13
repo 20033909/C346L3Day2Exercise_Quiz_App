@@ -75,7 +75,7 @@ const App = () => {
                     />
                 ))}
 
-                {/* Submit Button */}
+            
                 <TouchableOpacity style={style.buttonContainer} onPress={handleSubmit}>
                     <Text style={style.buttonText}>Submit Answers</Text>
                 </TouchableOpacity>
